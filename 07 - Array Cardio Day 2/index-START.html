@@ -59,6 +59,21 @@
 
     comments.splice(index, 1);
     console.table(comments);
+
+
+    let sortingPractice = [3, 2, 1, 7, 5, 6, 4, 10, 9, 8, 11, 12, 15, 14, 13];
+    sortingPractice.sort((a, b) => b - a);
+    let heading = document.createElement('h3');
+    heading.textContent = sortingPractice;
+    document.body.appendChild(heading);
+
+    let sortingPracticeTwo = ['a', 'e', 'c', 'f', 'b', 'd', 'h', 'g', 'i'];
+    //sortingPracticeTwo.sort();
+    sortingPracticeTwo.sort().reverse();
+    let headingTwo = document.createElement('h2');
+    headingTwo.textContent = sortingPracticeTwo;
+    document.body.appendChild(headingTwo);
+
   </script>
 </body>
 </html>
